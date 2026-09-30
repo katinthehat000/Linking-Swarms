@@ -1,0 +1,46 @@
+1.2
+25000
+0.3
+1e5
+0.2
+100
+120
+8.5
+65
+200
+100
+2
+
+Inputs are in the following order, with variable names from simulations also included:
+-Preferred curvature, prefK01
+-Timesteps to fold into preferred curvature, Nbend (typically 0 (fast coiling)  or 25000 (slow coiling))
+-Radius, h
+-Young's modulus, E
+-Density, rho
+-Viscous damping parameter, eta
+-Friction damping parameter, zeta
+-Skin drag, skindrag
+-Random force strength, driftForce
+-Filament repulsion strength, Kbulk
+-Boundary force scale, bdryForceStrength
+-inverse boundary friction, fStrength
+
+
+
+The above default values correspond to (in order):
+
+
+prefK01 = 1.2; %target curvature
+Nbend = 0; %timesteps to fold into preferred curvature, typically 0 or 25000
+h = 0.3; %radius
+Eb = 10^5;  %bending modulus
+rho = 0.2; %density
+eta = 100; %viscous damping
+zeta = 120; %friction damping
+skindrag = 8.5; %drag
+driftForce = 65; %Magnitude of random force
+Kbulk = 200; %sets ribbon-ribbon contact forces
+bdryForceStrength = 100; %sets force from boundary
+fStrength = 2; %inverse friction parameter, appears in boundary contact force
+
+
